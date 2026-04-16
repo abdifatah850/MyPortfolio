@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:"Poppins",serif;
+}
+body{
+    background-color:rgb(40, 40, 52);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+.navigation  a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.navigation  a:hover{
+  color: rgb(0, 255, 251);
+}
+hr{
+    opacity: 10;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+.arrow{
+    position:absolute;
+    transform: translateX(-5rem)translateY(1.5rem);
+   
+}
+.herosub{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+
+}
+.name{
+    font-size:3rem;
+    color: rgb(253, 254, 255);
+}
+.title{
+    font-size:4rem;
+    color: rgb(0, 255, 251);
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+}
+.textTitle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+.aboutName{
+    color: white;
+}
+.aboutTitle{
+    color:rgb(0, 255, 251);;
+}
+.aboutmepar{
+    text-align:justify;
+    color: rgb(233, 228, 222);
+}
+.Myprojects{
+    background-image: url(assets/svg/background.svg);
+    padding:10rem 10rem;
+    margin:5rem 0rem;
+}
+.projectcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin: 5rem auto;
+    max-width: 360px;
+}
+.projectTitle{
+    display: flex;
+    align-items:center;
+    justify-content: left;
+    gap: 5px;
+    font-size: 2rem;
+}
+.Myproject ul{
+    display: flex;
+    list-style-type:none;
+    align-items: center;
+    justify-content: space-between;
+}
+.Myprojects li{
+    border-radius: 16px;
+    background-color: rgb(57,62,70,0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+
+}
+.Myprojects li img{
+    width: 200px;
+    height: 200px;
+    object-fit:contain;
+    transition: transform 0.2s;
+
+}
+.Myprojects li :hover{
+    transform: scale(2.5);
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+.contactTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.contacMe{
+     display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-right: 5rem;
+    gap: 20rem;
+}
+
+.contact h3,.contact a{
+    color: aliceblue;
+    text-decoration: none;
+}
+    
+
+.emailAndPhone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+footer{
+    color: aliceblue;
+    padding:2rem ;
+    text-align: center;
+}
+@media (max-width: 1023px) {
+
+    header {
+        margin-left: 1rem;
+        margin-right:1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    .heroimgs{
+        width:350px;
+        max-width: 100%;
+    }
+
+    .name,  .title {
+        font-size: 2rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .aboutMe {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textcontainer {
+        align-items: center;
+        margin: 0 1em;
+        gap: 1rem;
+    }
+
+    /* FIXED selector */
+    .aboutName,.aboutTitle {
+        font-size: 1.5rem;
+    }
+
+    .aboutmepar {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .light {
+        width:100px;
+    }
+
+    .aboutMeimg {
+        width:250px;
+        max-width: 100%;
+    }
+
+   .Myprojects{
+    padding: 0;
+   }
+      
+
+    .projectcontainer {
+        padding: 2rem 0;
+        gap: 3rem;
+    }
+
+    .projectTitle {
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .Myproject ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .contactContainer {
+        margin: 2rem 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .contact{
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-right: 0;
+        
+    
+    }
+   .contact h3,.contact a{
+    color: ;
+   }
+    
+    footer{
+        color:aliceblue;
+        padding:2rem;
+        text-align: center;
+    }
+}
+
+
+    
+       
+
+   
